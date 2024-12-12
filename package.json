@@ -5,7 +5,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "test": "jest",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",

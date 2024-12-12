@@ -5,7 +5,9 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js'
   },
+  target: 'web',
   module: {
     rules: [
       {
@@ -34,7 +36,7 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-      }
+      },
     ],
   },
   plugins: [
@@ -42,6 +44,6 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
     }),
-    new MiniCSSExtractPlugin()
+    new MiniCSSExtractPlugin(),
   ],
 };
