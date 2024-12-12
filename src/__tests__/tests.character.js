@@ -39,45 +39,45 @@ describe('Bowerman class tests', () => {
 
 describe('Swordsman class tests', () => {
   test('should create a Swordsman character', () => {
-    const bowman = new Swordsman('John');
-    expect(bowman.type).toBe('Swordsman');
-    expect(bowman.attack).toBe(40);
-    expect(bowman.defence).toBe(10);
+    const swordsman = new Swordsman('John');
+    expect(swordsman.type).toBe('Swordsman');
+    expect(swordsman.attack).toBe(40);
+    expect(swordsman.defence).toBe(10);
   });
 });
 
 describe('Magician class tests', () => {
   test('should create a Magician character', () => {
-    const bowman = new Magician('John');
-    expect(bowman.type).toBe('Magician');
-    expect(bowman.attack).toBe(10);
-    expect(bowman.defence).toBe(40);
+    const magician = new Magician('John');
+    expect(magician.type).toBe('Magician');
+    expect(magician.attack).toBe(10);
+    expect(magician.defence).toBe(40);
   });
 });
 
 describe('Daemon class tests', () => {
   test('should create a Daemon character', () => {
-    const bowman = new Daemon('John');
-    expect(bowman.type).toBe('Daemon');
-    expect(bowman.attack).toBe(10);
-    expect(bowman.defence).toBe(40);
+    const daemon = new Daemon('John');
+    expect(daemon.type).toBe('Daemon');
+    expect(daemon.attack).toBe(10);
+    expect(daemon.defence).toBe(40);
   });
 });
 
 describe('Undead class tests', () => {
   test('should create a Undead character', () => {
-    const bowman = new Undead('John');
-    expect(bowman.type).toBe('Undead');
-    expect(bowman.attack).toBe(25);
-    expect(bowman.defence).toBe(25);
+    const undead = new Undead('John');
+    expect(undead.type).toBe('Undead');
+    expect(undead.attack).toBe(25);
+    expect(undead.defence).toBe(25);
   });
 });
 
 describe('Zombie class tests', () => {
   test('should create a Zombie character', () => {
-    const bowman = new Zombie('John');
-    expect(bowman.type).toBe('Zombie');
-    expect(bowman.attack).toBe(40);
-    expect(bowman.defence).toBe(10);
+    const zombie = new Zombie('John');
+    expect(zombie.type).toBe('Zombie');
+    expect(zombie.attack).toBe(40);
+    expect(zombie.defence).toBe(10);
   });
 });
